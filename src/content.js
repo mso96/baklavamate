@@ -32,7 +32,6 @@ export const products = [
 export const priceFor = (product, grams) => product.pricePerKg * grams / 1000;
 
 export const merch = [
- {id:'baklava-tee',name:'I LOVE BAKLAVA. T-SHIRT',price:25,image:'/assets/merch-shirt.png',sizes:['S','M','L','XL']},
  {id:'nazar-keyring',name:'NAZAR KEYRING',price:5.99,image:'/assets/merch-keyring.png'},
 ];
 export const contactEmail='love@baklavamate.com';

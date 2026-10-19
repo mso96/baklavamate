@@ -14,7 +14,7 @@ London-based baklava storefront. React + Vite, with locally stored imagery and a
 
 ## Catalogue and behaviour
 
-Five baklava varieties in 1 kg and 2 kg. Walnut is £28 / £56; other varieties are £30 / £60. Merch: cream I Love Baklava T-shirt (£25, S–XL), single nazar keyring (£5.99).
+Five baklava varieties in 1 kg and 2 kg. Walnut is £28 / £56; other varieties are £30 / £60. Merch: single nazar keyring (£5.99). T-shirt temporarily withdrawn.
 
 Basket items persist locally, including food weights and shirt sizes. Legacy 500 g lines are removed with a notice. Event forms prepare a mailto draft and copyable summary; the visitor sends the email themselves to love@baklavamate.com. No message is sent by the site.
 

@@ -23,3 +23,5 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}.menu-links button,.footer-l
 /* Align newsletter content with the editorial section's left edge. */
 .newsletter{width:100%;justify-content:flex-start;padding:18px 45px 30px}.newsletter form{width:400px;max-width:100%;text-align:left}.newsletter h2{max-width:none;margin-left:0;margin-right:0}.newsletter input,.newsletter .pill{width:100%}.newsletter .terms{margin:22px 0}
 @media(max-width:767px){.newsletter{padding-left:35px;padding-right:35px}}
+
+.merch-grid.merch-single{grid-template-columns:minmax(0,1fr);max-width:600px}
