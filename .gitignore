@@ -10,3 +10,6 @@ public/assets/*
 !public/assets/baklava-*.png
 !public/assets/merch-*.png
 !public/assets/*.woff2
+
+.wrangler/
+.dev.vars*

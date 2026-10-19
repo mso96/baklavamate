@@ -23,3 +23,9 @@ Newsletter integration on Cloudflare and Stripe checkout are pending. No signup,
 ## Packaging
 
 The build emits `dist/client`, `dist/server/index.js` and `dist/.openai/hosting.json`. Existing worker routing supports SPA page refreshes. Only current app assets are versioned; old clone evidence and unused reference images are excluded.
+
+## Cloudflare Workers Builds
+
+Deploy command: `npx wrangler deploy` (or `npm run deploy`). The committed Wrangler configuration runs the existing build and serves `dist/client` with SPA fallback. No automatic framework setup or Cloudflare Vite plugin is required. Do not change the Vite output to `dist`: the Sites packaging step also relies on `dist/client`.
+
+Validate without publishing: `npm run deploy:check`.

@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "baklavamate",
+  "compatibility_date": "2026-10-19",
+  "build": {
+    "command": "npm run build"
+  },
+  "assets": {
+    "directory": "./dist/client",
+    "not_found_handling": "single-page-application"
+  }
+}
