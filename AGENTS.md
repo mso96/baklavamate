@@ -35,3 +35,4 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Publish this project only to https://github.com/mso96/baklavamate.git; exclude parent workspace, secrets and local evidence.
 
 - Footer location row “● LONDON, UK” removed at user request; this is a targeted footer change.
+- Newsletter block should sit at the editorial section's left gutter, with heading, copy, input and button sharing one left edge (45 px desktop / 35 px mobile).
