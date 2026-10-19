@@ -33,3 +33,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - General allergen information only until exact ingredients are verified. Dedicated privacy page must reflect actual behaviour.
 - Cloudflare newsletter and Stripe checkout deferred. Never imply successful subscription or payment while disconnected.
 - Publish this project only to https://github.com/mso96/baklavamate.git; exclude parent workspace, secrets and local evidence.
+
+- Footer location row “● LONDON, UK” removed at user request; this is a targeted footer change.
