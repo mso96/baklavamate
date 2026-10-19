@@ -1,0 +1,35 @@
+# Prototype Instructions
+
+Run the local server yourself and open the preview in the browser available to this environment. Do not give the user server-start instructions when you can run it.
+
+Before making substantial visual changes, use the Product Design plugin's `get-context` skill when the visual source is unclear or no longer matches the current goal. When the user gives durable prototype-specific design feedback, preferences, or decisions, record them in `AGENTS.md`.
+
+When implementing from a selected generated mock, treat that image as the source of truth for layout, component anatomy, density, spacing, color, typography, visible content, and hierarchy.
+
+Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs` intact so the same local prototype can be handed to Sites. Before a Sites handoff, run `npm run build` and `npm run test:sites`; the build must leave `dist/client/index.html`, `dist/server/index.js`, and `dist/.openai/hosting.json`.
+
+## Baklava Mate direction (2026-10-19)
+- Brand: Baklava Mate, based in London.
+- Preserve the existing homepage design, layout, typography, colours and overall visual treatment; change content only.
+- Catalogue: four or five baklava varieties, with only 500 g and 1 kg sizes.
+- Product names, prices, delivery coverage and product photography require confirmation; do not invent live commercial claims.
+
+- Confirmed varieties: pistachio, walnut, cold baklava, pistachio sarma and şöbiyet.
+- Temporary 1 kg prices: £30 for all except walnut £28. 500 g uses proportional prices (£15 / £14).
+- User approved generated sample product images. Keep all media local.
+
+## Inner pages (2026-10-19)
+- Founder: Sefa Oruc. Separate Our Story page; founder photos will be supplied later.
+- Product detail pages include event date/time, guests and large quantity enquiry UI. Standard retail sizes remain 500 g / 1 kg.
+- Larger orders are by enquiry, with no invented bulk price or delivery promise.
+- Separate allergen page; exact ingredients and cross-contact information remain unverified.
+- Merch concepts: Baklava Lover T-shirt and cap, Turkish Tea T-shirt; preserve existing palette and type.
+
+## Confirmed update — 2026-10-19 (supersedes earlier size/merch decisions)
+- Retail baklava is only 1 kg / 2 kg; walnut £28 / £56, others £30 / £60. Remove legacy 500 g basket entries with notice, never silently enlarge.
+- Remove announcement band, hero size sentence, search and product detail brand eyebrow.
+- Contact: love@baklavamate.com. Events prepare a mailto draft and copyable summary; visitors send through their email app. Fresh baklava for events; arrangements require the team's confirmation.
+- Merch: cream “i love baklava.” shirt £25 in S/M/L/XL and one nazar keyring £5.99. Exactly two products, both addable to the basket.
+- General allergen information only until exact ingredients are verified. Dedicated privacy page must reflect actual behaviour.
+- Cloudflare newsletter and Stripe checkout deferred. Never imply successful subscription or payment while disconnected.
+- Publish this project only to https://github.com/mso96/baklavamate.git; exclude parent workspace, secrets and local evidence.

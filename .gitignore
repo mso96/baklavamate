@@ -1,0 +1,12 @@
+node_modules/
+dist/
+evidence/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+public/assets/*
+!public/assets/baklava-*.png
+!public/assets/merch-*.png
+!public/assets/*.woff2
