@@ -49,3 +49,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - User rejected the cream panel, heavy outlined icons and large pronunciation motif. Remove these. Use three generated editorial photos with lavender backgrounds, existing lime labels and restrained mono typography in the established grid. Preserve the rest of the site.
 
 - Latest process visual direction: use generated hand-drawn editorial illustrations instead of photographs. Keep the restrained three-card layout; lavender backgrounds, pistachio green and golden ochre, no heavy cartoon frames. This supersedes the photography preference above.
+
+- Latest process refinement: compact numbered three-step strip with smaller illustrations (160 px desktop / 140 px mobile), arrows and “bak-la-vaah” pronunciation. Baking illustration must show square-cut baklava with no steam/smoke.
