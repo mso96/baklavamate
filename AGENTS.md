@@ -51,3 +51,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Latest process visual direction: use generated hand-drawn editorial illustrations instead of photographs. Keep the restrained three-card layout; lavender backgrounds, pistachio green and golden ochre, no heavy cartoon frames. This supersedes the photography preference above.
 
 - Latest process refinement: compact numbered three-step strip with smaller illustrations (160 px desktop / 140 px mobile), arrows and “bak-la-vaah” pronunciation. Baking illustration must show square-cut baklava with no steam/smoke.
+
+- Ingredients process illustration must contain only Antep pistachios and walnuts; no filo or pastry sheets.

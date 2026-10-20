@@ -1,6 +1,6 @@
 import React from 'react';
 const steps=[
- {id:'ingredients',title:'FROM TÜRKİYE',body:'Ingredients from Türkiye. The beginning of every good layer.',alt:'Pistachios, walnuts and fine filo pastry on a lavender surface'},
+ {id:'ingredients',title:'FROM TÜRKİYE',body:'Ingredients from Türkiye. The beginning of every good layer.',alt:'Antep pistachios and walnuts on a lavender surface'},
  {id:'craft',title:'IN EXPERT HANDS',body:'Prepared by Turkish baklava masters, with care in every layer.',alt:'Pastry chef hands layering filo and pistachio filling in a baking tray'},
  {id:'baking',title:'BAKED FRESH',body:'Golden, flaky and freshly baked. Ready for a sweet moment.',alt:'Neat rows of square-cut golden pistachio baklava in a tray'}
 ];
