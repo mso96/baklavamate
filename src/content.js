@@ -32,6 +32,6 @@ export const products = [
 export const priceFor = (product, grams) => product.pricePerKg * grams / 1000;
 
 export const merch = [
- {id:'nazar-keyring',name:'NAZAR KEYRING',price:5.99,image:'/assets/merch-keyring.png'},
+ {id:'nazar-keyring',name:'NAZAR KEYRING',price:5.99,image:'/assets/merch-keyring-cutout.png'},
 ];
 export const contactEmail='love@baklavamate.com';

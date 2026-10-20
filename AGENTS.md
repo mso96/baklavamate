@@ -53,3 +53,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Latest process refinement: compact numbered three-step strip with smaller illustrations (160 px desktop / 140 px mobile), arrows and “bak-la-vaah” pronunciation. Baking illustration must show square-cut baklava with no steam/smoke.
 
 - Ingredients process illustration must contain only Antep pistachios and walnuts; no filo or pastry sheets.
+
+- Nazar keyring detail uses a transparent product cutout over lavender, with normal blending to preserve silver/white colours. Remove its illustrative-photo caption.
