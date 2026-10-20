@@ -44,3 +44,6 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Public pages must be prerendered with metadata, canonical URLs and structured data; generate sitemap, robots and llms.txt from the same catalogue. Footer links to /llms.txt.
 - Canonical origin defaults to https://baklavamate.com, configurable with VITE_SITE_URL. Do not invent ratings, stock or shipping guarantees.
 - Confirmed process: ingredients come from Türkiye, Turkish baklava masters prepare and bake it fresh. Homepage and Our Story use a three-step illustrated section and “baa·kla·vaah” motif. Do not infer freezing, shipping routes or other reference-image claims.
+
+## Process redesign feedback
+- User rejected the cream panel, heavy outlined icons and large pronunciation motif. Remove these. Use three generated editorial photos with lavender backgrounds, existing lime labels and restrained mono typography in the established grid. Preserve the rest of the site.
