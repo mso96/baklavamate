@@ -26,6 +26,14 @@ The build emits `dist/client`, `dist/server/index.js` and `dist/.openai/hosting.
 
 ## Cloudflare Workers Builds
 
-Deploy command: `npx wrangler deploy` (or `npm run deploy`). The committed Wrangler configuration runs the existing build and serves `dist/client` with SPA fallback. No automatic framework setup or Cloudflare Vite plugin is required. Do not change the Vite output to `dist`: the Sites packaging step also relies on `dist/client`.
+Deploy command: `npx wrangler deploy` (or `npm run deploy`). The committed Wrangler configuration runs the existing build and serves `dist/client` with pre-rendered pages and a proper 404 page. No automatic framework setup or Cloudflare Vite plugin is required. Do not change the Vite output to `dist`: the Sites packaging step also relies on `dist/client`.
 
 Validate without publishing: `npm run deploy:check`.
+
+## SEO and agent discovery
+
+Build prerenders 13 public routes into readable HTML with unique titles/descriptions, canonical links, social metadata, Product and Breadcrumb JSON-LD. Products do not claim stock, reviews or checkout offers while availability/payment integration is pending. `sitemap.xml`, `robots.txt`, `llms.txt` and `404.html` are generated from the same catalogue. Unknown routes use Cloudflare’s `404-page` handling.
+
+Canonical origin defaults to `https://baklavamate.com`; set `VITE_SITE_URL` at build time if the production origin differs. Preview the complete generated site with `npm run preview`; discovery files are build outputs rather than files served by the Vite development server.
+
+The homepage and story page explain confirmed sourcing and preparation: ingredients from Türkiye, Turkish baklava masters and fresh baking.

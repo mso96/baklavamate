@@ -8,6 +8,6 @@ test('Cloudflare deploy builds and serves the same client directory as Vite',()=
  assert.equal(config.name,'baklavamate');
  assert.equal(config.build.command,'npm run build');
  assert.equal(resolve(config.assets.directory),resolve(vite.build.outDir));
- assert.equal(config.assets.not_found_handling,'single-page-application');
+ assert.equal(config.assets.not_found_handling,'404-page');
  assert.ok(existsSync(resolve(config.assets.directory,'index.html')));
 });

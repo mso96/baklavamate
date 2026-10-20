@@ -38,3 +38,9 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Newsletter block should sit at the editorial section's left gutter, with heading, copy, input and button sharing one left edge (45 px desktop / 35 px mobile).
 
 - T-shirt temporarily removed from merch. Only the £5.99 nazar keyring is available; retain shirt artwork for possible future return.
+
+## SEO and process — 2026-10-20
+- Nazar keyring has a dedicated detail route at /products/nazar-keyring.
+- Public pages must be prerendered with metadata, canonical URLs and structured data; generate sitemap, robots and llms.txt from the same catalogue. Footer links to /llms.txt.
+- Canonical origin defaults to https://baklavamate.com, configurable with VITE_SITE_URL. Do not invent ratings, stock or shipping guarantees.
+- Confirmed process: ingredients come from Türkiye, Turkish baklava masters prepare and bake it fresh. Homepage and Our Story use a three-step illustrated section and “baa·kla·vaah” motif. Do not infer freezing, shipping routes or other reference-image claims.
