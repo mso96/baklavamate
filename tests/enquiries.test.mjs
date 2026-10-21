@@ -1,0 +1,13 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import worker,{validate} from '../cloudflare/worker.js';
+const values={name:'Test Mate',email:'test@example.com',occasion:'Birthday',date:'2099-12-25',time:'15:00',guests:'40',kg:'5',product:'PISTACHIO BAKLAVA',notes:''};
+const id='00000000-0000-4000-8000-000000000001';
+const request=(body={id,values},origin='https://baklavamate.com')=>new Request('https://baklavamate.com/api/enquiries',{method:'POST',headers:{Origin:origin,'Content-Type':'application/json'},body:JSON.stringify(body)});
+function env(fail=false){const records=new Map();let sends=0;return {records,get sends(){return sends},NOTIFICATION_TO:'owner@example.com',NOTIFICATION_FROM:'forms@example.com',FORM_RATE_LIMIT:{limit:async()=>({success:true})},EMAIL:{send:async()=>{sends++;if(fail)throw Error('unavailable')}},ENQUIRIES:{prepare(sql){return {bind(...args){return {first:async()=>records.get(args[0]),run:async()=>{if(sql.startsWith('INSERT')){records.set(args[0],{id:args[0],payload:args[2]});return {meta:{changes:1}}}records.get(args[1]).notification=args[0];return {meta:{changes:1}}}}}}}}};}
+test('validates fields, impossible dates, injection and ranges',()=>{assert.ok(validate(values));for(const patch of [{email:'bad'},{name:'x\r\nHeader: bad'},{date:'2099-02-30'},{guests:'0'},{time:'25:00'},{kg:'10001'},{notes:'a'.repeat(1001)}])assert.equal(validate({...values,...patch}),false)});
+test('disabled bindings never report successful submission',async()=>assert.equal((await worker.fetch(request(),{})).status,503));
+test('rejects foreign origins and oversized payloads',async()=>{assert.equal((await worker.fetch(request(undefined,'https://elsewhere.com'),env())).status,403);assert.equal((await worker.fetch(request({id,values,padding:'x'.repeat(9000)}),env())).status,400)});
+test('saves before notification and deduplicates retries',async()=>{const e=env();assert.equal((await worker.fetch(request(),e)).status,201);assert.equal(e.records.get(id).notification,'sent');await worker.fetch(request(),e);assert.equal(e.sends,1);assert.equal(e.records.size,1)});
+test('email failure retains saved enquiry with failed status',async()=>{const e=env(true);assert.equal((await worker.fetch(request(),e)).status,201);assert.equal(e.records.get(id).notification,'failed')});
+test('rate limit, honeypot and storage failure',async()=>{const e=env();e.FORM_RATE_LIMIT.limit=async()=>({success:false});assert.equal((await worker.fetch(request(),e)).status,429);assert.equal((await worker.fetch(request({id,values,website:'bot'}),env())).status,400);const broken=env();broken.ENQUIRIES.prepare=()=>{throw Error('offline')};assert.equal((await worker.fetch(request(),broken)).status,503)});

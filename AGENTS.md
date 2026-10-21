@@ -57,3 +57,6 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Nazar keyring detail uses a transparent product cutout over lavender, with normal blending to preserve silver/white colours. Remove its illustrative-photo caption.
 
 - User confirmed UK-wide delivery; homepage hero subtitle on both slides reads “DELIVERY ACROSS THE UK”.
+
+- Event forms requested: Cloudflare D1 tracking and email notifications to love@baklavamate.com, forwarded to sefa9620@gmail.com (user confirmed). Provisioning currently awaits explicit approval after automatic review blocked permanent resource creation.
+- External recipe sources are research drafts only until checked against actual production recipes; see docs/ingredient-review.md.
