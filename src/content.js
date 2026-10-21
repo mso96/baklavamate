@@ -9,8 +9,8 @@ export const brand = {
 export const copy = {
   navigation: ['SHOP', 'OUR BAKLAVA', 'ABOUT'],
   hero: [
-    { title: 'SWEET. FLAKY.\nHELLO, MATE.', body: 'BAKLAVA MATE. BASED IN LONDON.', detail: '' },
-    { title: 'A LITTLE TREAT.\nA LOT TO SHARE.', body: 'GOOD COMPANY.\nGREAT BAKLAVA.', detail: 'FIND YOUR FAVOURITE BAKLAVA.' },
+    { title: 'SWEET. FLAKY.\nHELLO, MATE.', body: 'DELIVERY ACROSS THE UK', detail: '' },
+    { title: 'A LITTLE TREAT.\nA LOT TO SHARE.', body: 'DELIVERY ACROSS THE UK', detail: 'FIND YOUR FAVOURITE BAKLAVA.' },
   ],
   productsHeading: 'FIND YOUR FAVOURITE',
   editorialHeading: 'THE SWEET SIDE',

@@ -55,3 +55,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Ingredients process illustration must contain only Antep pistachios and walnuts; no filo or pastry sheets.
 
 - Nazar keyring detail uses a transparent product cutout over lavender, with normal blending to preserve silver/white colours. Remove its illustrative-photo caption.
+
+- User confirmed UK-wide delivery; homepage hero subtitle on both slides reads “DELIVERY ACROSS THE UK”.
