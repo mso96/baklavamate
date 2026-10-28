@@ -31,3 +31,5 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}.menu-links button,.footer-l
 
 .detail-image.accessory-image img{mix-blend-mode:normal}
 .allergen-profile{border-top:1px solid #000;padding:14px 0}.allergen-profile h3{font-size:15px;margin:0 0 8px}.allergen-profile p{font-size:13px;margin:5px 0}
+
+.detail-image .detail-closeup{margin-top:18px}
