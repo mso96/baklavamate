@@ -60,3 +60,4 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - Event forms requested: Cloudflare D1 tracking and email notifications to love@baklavamate.com, forwarded to sefa9620@gmail.com (user confirmed). Provisioning currently awaits explicit approval after automatic review blocked permanent resource creation.
 - External recipe sources are research drafts only until checked against actual production recipes; see docs/ingredient-review.md.
+- Catalogue now uses event trays instead of kilogram boxes: classic pistachio 86 slices £90; clotted cream şöbiyet 34 slices £70 round tray; clotted cream midye 68–72 pieces £70 round tray; special baklava 96 slices £70; cold baklava 84 slices £120.

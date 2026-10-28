@@ -3,8 +3,8 @@ export const brand = {
   name: 'BAKLAVA MATE',
   location: 'London, UK',
   title: 'Baklava Mate | Baklava in London',
-  description: 'Meet Baklava Mate. A London-based baklava brand, with a selection of baklava in 1 kg and 2 kg boxes.',
-  sizes: ['1 kg', '2 kg'],
+  description: 'Meet Baklava Mate. Fresh Turkish baklava arranged in generous trays for events and gatherings across the UK.',
+  sizes: [],
 };
 export const copy = {
   navigation: ['SHOP', 'OUR BAKLAVA', 'ABOUT'],
@@ -17,19 +17,19 @@ export const copy = {
   editorial: [
     { title: 'MEET BAKLAVA MATE', button: 'OUR STORY', body: 'A London-based baklava brand. A little sweetness, a lot to share.' },
     { title: 'YOUR KIND OF BAKLAVA', button: 'EXPLORE', body: 'Discover our baklava selection and find your favourite.' },
-    { title: '1 KG OR 2 KG', button: 'PICK YOUR BOX', body: 'Two sizes. Choose 1 kg for the table or 2 kg for more mates.' },
+    { title: 'TRAYS FOR THE TABLE', button: 'PLAN YOUR EVENT', body: 'Generous trays, counted by slice and made for sharing.' },
     { title: 'BASED IN LONDON', button: 'MEET YOUR MATE', body: 'Baklava Mate calls London home.' },
   ],
   newsletter: { title: 'A LITTLE SWEETNESS IN YOUR INBOX', body: 'BAKLAVA NEWS, NEW FLAVOURS & UPDATES.', button: 'KEEP ME POSTED' },
 };
 export const products = [
-  { id: 'pistachio', name: 'PISTACHIO BAKLAVA', pricePerKg: 30, description: 'Golden layers, a pistachio centre. Meet the classic.' },
-  { id: 'walnut', name: 'WALNUT BAKLAVA', pricePerKg: 28, description: 'Flaky pastry with a rich walnut filling.' },
-  { id: 'cold', name: 'COLD BAKLAVA', pricePerKg: 30, description: 'A milk-soaked favourite with a cocoa finish.' },
-  { id: 'roll', name: 'PISTACHIO SARMA', pricePerKg: 30, description: 'Pistachio-filled rolls for your sweet moment.' },
-  { id: 'sobiyet', name: 'ŞÖBİYET', pricePerKg: 30, description: 'Folded pastry with pistachio and a creamy centre.' },
+  { id: 'pistachio', name: 'CLASSIC PISTACHIO BAKLAVA', slices: '86 slices', tray: 'Large rectangular tray', price: 90, image:'/assets/baklava-pistachio.png', description: 'Our classic Antep pistachio baklava, arranged fresh in a generous event tray.' },
+  { id: 'sobiyet', name: 'CLOTTED CREAM ŞÖBİYET', slices: '34 slices', tray: 'Round tray', price: 70, image:'/assets/baklava-sobiyet.png', description: 'Folded pistachio şöbiyet with a rich kaymak-style centre, made for sharing.' },
+  { id: 'mussel', name: 'CLOTTED CREAM MIDYE', slices: '68–72 pieces', tray: 'Round tray', price: 70, image:'/assets/baklava-roll.png', description: 'Shell-shaped midye baklava with a creamy kaymak-style filling.' },
+  { id: 'special', name: 'SPECIAL BAKLAVA', slices: '96 slices', tray: 'Large rectangular tray', price: 70, image:'/assets/baklava-walnut.png', description: 'A generous special baklava tray for a full table and plenty of mates.' },
+  { id: 'cold', name: 'COLD BAKLAVA', slices: '84 slices', tray: 'Large rectangular tray', price: 120, image:'/assets/baklava-cold.png', description: 'Chilled, creamy cold baklava prepared fresh for celebrations and events.' },
 ];
-export const priceFor = (product, grams) => product.pricePerKg * grams / 1000;
+export const priceFor = product => product.price;
 
 export const merch = [
  {id:'nazar-keyring',name:'NAZAR KEYRING',price:5.99,image:'/assets/merch-keyring-cutout.png'},

@@ -2,10 +2,10 @@ const json=(body,status=200)=>Response.json(body,{status,headers:{'Cache-Control
 const ready=env=>Boolean(env.ENQUIRIES&&env.EMAIL&&env.FORM_RATE_LIMIT&&env.NOTIFICATION_TO&&env.NOTIFICATION_FROM);
 export function validate(v){
  if(!v||typeof v!=='object'||Array.isArray(v))return false;
- const limits={name:100,email:254,occasion:80,date:10,time:5,guests:6,kg:5,product:100,notes:1000};
+ const limits={name:100,email:254,occasion:80,date:10,time:5,guests:6,trays:5,product:100,notes:1000};
  for(const [key,max] of Object.entries(limits))if(typeof v[key]!=='string'||v[key].length>max||(/[\r\n]/.test(v[key])&&key!=='notes'))return false;
  const day=new Date(v.date+'T00:00:00Z');
- return Boolean(v.name.trim()&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.email)&&v.occasion&&v.product&&/^\d{4}-\d{2}-\d{2}$/.test(v.date)&&!isNaN(day)&&day.toISOString().slice(0,10)===v.date&&v.date>=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/London',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())&&/^([01]\d|2[0-3]):[0-5]\d$/.test(v.time)&&/^\d+$/.test(v.guests)&&Number(v.guests)>=1&&Number(v.guests)<=100000&&(!v.kg||(/^\d+$/.test(v.kg)&&Number(v.kg)>=1&&Number(v.kg)<=10000)));
+ return Boolean(v.name.trim()&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.email)&&v.occasion&&v.product&&/^\d{4}-\d{2}-\d{2}$/.test(v.date)&&!isNaN(day)&&day.toISOString().slice(0,10)===v.date&&v.date>=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/London',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())&&/^([01]\d|2[0-3]):[0-5]\d$/.test(v.time)&&/^\d+$/.test(v.guests)&&Number(v.guests)>=1&&Number(v.guests)<=100000&&(!v.trays||(/^\d+$/.test(v.trays)&&Number(v.trays)>=1&&Number(v.trays)<=1000)));
 }
 async function readBody(request){
  const reader=request.body?.getReader();if(!reader)throw Error('body');
