@@ -27,7 +27,7 @@ export const products = [
   { id: 'sobiyet', name: 'CLOTTED CREAM ŞÖBİYET', slices: '34 slices', tray: 'Round tray', price: 70, image:'/assets/tray-sobiyet-real-clean.jpg', description: 'Folded pistachio şöbiyet with a rich kaymak-style centre, made for sharing.' },
   { id: 'mussel', name: 'CLOTTED CREAM MIDYE', slices: '68–72 pieces', tray: 'Round tray', price: 70, image:'/assets/tray-mussel-real-clean.jpg', description: 'Shell-shaped midye baklava with a creamy kaymak-style filling.' },
   { id: 'special', name: 'SPECIAL BAKLAVA', slices: '96 slices', tray: 'Large rectangular tray', price: 70, image:'/assets/tray-special-real-clean.jpg', description: 'A generous special baklava tray for a full table and plenty of mates.' },
-  { id: 'cold', name: 'COLD BAKLAVA', slices: '84 slices', tray: 'Large rectangular tray', price: 120, image:'/assets/baklava-cold.png', description: 'Chilled, creamy cold baklava prepared fresh for celebrations and events.' },
+  { id: 'cold', name: 'PISTACHIO COLD BAKLAVA', slices: '84 slices', tray: 'Large rectangular tray', price: 120, image:'/assets/tray-pistachio-cold-real.png', description: 'Chilled, creamy cold baklava prepared fresh for celebrations and events.' },
   { id: 'cold-cocoa', name: 'COCOA COLD BAKLAVA', slices: '84 slices', tray: 'Large rectangular tray', price: 120, image:'/assets/tray-cocoa-cold-real.png', description: 'Chilled cocoa cold baklava with creamy layers and pistachio, prepared fresh for celebrations and events.' },
 ];
 export const priceFor = product => product.price;
