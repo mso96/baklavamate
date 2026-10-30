@@ -69,3 +69,6 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 ## FAQ direction — 2026-10-30
 - Add a footer-linked FAQ page with short, grouped expandable questions, inspired by the Good Baklava FAQ structure but written for Baklava Mate's actual event-tray and enquiry flow.
 - Keep the established typography and palette. Do not promise online checkout, fixed delivery terms, storage life or allergen suitability that have not been confirmed.
+
+## Tray orientation — 2026-10-30
+- The rectangular tray photos should appear in a consistent horizontal orientation and comparable scale in the product carousel and details. Keep the whole real tray and metal edge visible; do not rotate pastries sideways or replace the supplied photography with generated food images.
