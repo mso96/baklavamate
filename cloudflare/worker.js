@@ -15,6 +15,16 @@ async function readBody(request){
 export default {async fetch(request,env){
  const url=new URL(request.url);
  if(url.pathname==='/api/forms-status'&&request.method==='GET')return json({enabled:ready(env)});
+ if(url.pathname==='/api/newsletter'&&request.method==='POST'){
+  if(request.headers.get('Origin')!==url.origin)return json({error:'Origin not allowed'},403);
+  if(!env.ENQUIRIES)return json({error:'Newsletter is not configured.'},503);
+  const rate=await env.FORM_RATE_LIMIT.limit({key:'newsletter:'+ (request.headers.get('CF-Connecting-IP')||'unknown')});
+  if(!rate.success)return json({error:'Please wait a minute before trying again.'},429);
+  let body;try{body=await readBody(request)}catch{return json({error:'Invalid request'},400)}
+  const email=typeof body.email==='string'?body.email.trim().toLowerCase():'';
+  if(email.length>254||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))return json({error:'Please enter a valid email address.'},400);
+  try{const result=await env.ENQUIRIES.prepare('INSERT OR IGNORE INTO newsletter_subscribers (email,created_at) VALUES (?,?)').bind(email,new Date().toISOString()).run();return json({ok:true,alreadySubscribed:result.meta.changes===0},201)}catch{console.error(JSON.stringify({event:'newsletter_save_failed'}));return json({error:'We could not save your email. Please try again.'},503)}
+ }
  if(!url.pathname.startsWith('/api/'))return env.ASSETS.fetch(request);
  if(url.pathname!=='/api/enquiries')return json({error:'Not found'},404);
  if(request.method!=='POST')return json({error:'Method not allowed'},405);
