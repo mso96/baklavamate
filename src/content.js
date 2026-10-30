@@ -18,15 +18,15 @@ export const copy = {
     { title: 'MEET BAKLAVA MATE', button: 'OUR STORY', body: 'A London-based baklava brand. A little sweetness, a lot to share.' },
     { title: 'YOUR KIND OF BAKLAVA', button: 'EXPLORE', body: 'Discover our baklava selection and find your favourite.' },
     { title: 'TRAYS FOR THE TABLE', button: 'PLAN YOUR EVENT', body: 'Generous trays, counted by slice and made for sharing.' },
-    { title: 'BASED IN LONDON', button: 'MEET YOUR MATE', body: 'Baklava Mate calls London home.' },
+    { title: '5% OFF YOUR FIRST ORDER', button: 'SIGN UP', body: 'Join the list for a little extra sweetness.' },
   ],
-  newsletter: { title: 'A LITTLE SWEETNESS IN YOUR INBOX', body: 'BAKLAVA NEWS, NEW FLAVOURS & UPDATES.', button: 'KEEP ME POSTED' },
+  newsletter: { title: '5% OFF YOUR FIRST ORDER', body: 'A LITTLE SWEETNESS IN YOUR INBOX. BAKLAVA NEWS, NEW FLAVOURS & UPDATES.', button: 'CLAIM MY 5%' },
 };
 export const products = [
-  { id: 'pistachio', name: 'CLASSIC PISTACHIO BAKLAVA', slices: '86 slices', tray: 'Large rectangular tray', price: 90, image:'/assets/tray-pistachio-real-clean-transparent.png', description: 'Our classic Antep pistachio baklava, arranged fresh in a generous event tray.' },
+  { id: 'pistachio', name: 'CLASSIC PISTACHIO BAKLAVA', slices: '86 slices', tray: 'Large rectangular tray', price: 90, image:'/assets/tray-rectangular-straight.png', description: 'Our classic Antep pistachio baklava, arranged fresh in a generous event tray.' },
   { id: 'sobiyet', name: 'CLOTTED CREAM ŞÖBİYET', slices: '34 slices', tray: 'Round tray', price: 70, image:'/assets/tray-sobiyet-real-clean-transparent.png', description: 'Folded pistachio şöbiyet with a rich kaymak-style centre, made for sharing.' },
   { id: 'mussel', name: 'CLOTTED CREAM MIDYE', slices: '68–72 pieces', tray: 'Round tray', price: 70, image:'/assets/tray-mussel-real-clean-transparent.png', description: 'Shell-shaped midye baklava with a creamy kaymak-style filling.' },
-  { id: 'special', name: 'SPECIAL BAKLAVA', slices: '96 slices', tray: 'Large rectangular tray', price: 70, image:'/assets/tray-special-real-clean-transparent.png', description: 'A generous special baklava tray for a full table and plenty of mates.' },
+  { id: 'special', name: 'SPECIAL BAKLAVA', slices: '96 slices', tray: 'Large rectangular tray', price: 70, image:'/assets/tray-rectangular-straight.png', description: 'A generous special baklava tray for a full table and plenty of mates.' },
   { id: 'cold', name: 'PISTACHIO COLD BAKLAVA', slices: '84 slices', tray: 'Large rectangular tray', price: 120, image:'/assets/tray-pistachio-cold-real-transparent.png', description: 'Chilled, creamy cold baklava prepared fresh for celebrations and events.' },
   { id: 'cold-cocoa', name: 'COCOA COLD BAKLAVA', slices: '84 slices', tray: 'Large rectangular tray', price: 120, image:'/assets/tray-cocoa-cold-real-transparent.png', description: 'Chilled cocoa cold baklava with creamy layers and pistachio, prepared fresh for celebrations and events.' },
 ];
