@@ -31,7 +31,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Contact: love@baklavamate.com. Events prepare a mailto draft and copyable summary; visitors send through their email app. Fresh baklava for events; arrangements require the team's confirmation.
 - Merch: cream “i love baklava.” shirt £25 in S/M/L/XL and one nazar keyring £5.99. Exactly two products, both addable to the basket.
 - General allergen information only until exact ingredients are verified. Dedicated privacy page must reflect actual behaviour.
-- Cloudflare newsletter and Stripe checkout deferred. Never imply successful subscription or payment while disconnected.
+- Cloudflare D1 newsletter registration is live. Show success only after the API confirms storage; no automatic confirmation email is sent. Stripe checkout remains deferred.
 - Publish this project only to https://github.com/mso96/baklavamate.git; exclude parent workspace, secrets and local evidence.
 
 - Footer location row “● LONDON, UK” removed at user request; this is a targeted footer change.
