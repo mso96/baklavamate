@@ -72,3 +72,4 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 ## Tray orientation — 2026-10-30
 - The rectangular tray photos should appear in a consistent horizontal orientation and comparable scale in the product carousel and details. Keep the whole real tray and metal edge visible; do not rotate pastries sideways or replace the supplied photography with generated food images.
+- For the cocoa cold baklava tray, use the user's newer full-tray photo so the entire front edge and both front corners remain visible.
