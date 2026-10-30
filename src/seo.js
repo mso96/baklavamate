@@ -8,6 +8,7 @@ const pages={
  '/merch':['Nazar Keyring | Baklava Mate Merch','Discover the blue nazar keyring from Baklava Mate. £5.99 per keyring, sold individually with a silver-coloured clasp.'],
  '/allergens':['Ingredients & Allergen Information | Baklava Mate','Find out how to request current ingredient, allergen and cross-contact information before arranging your Baklava Mate order.'],
  '/privacy':['Privacy Information | Baklava Mate','How Baklava Mate handles browser basket storage, email enquiries and privacy requests. Contact love@baklavamate.com.'],
+ '/faq':['Frequently Asked Questions | Baklava Mate','Answers to common questions about Baklava Mate event trays, ordering, UK delivery, allergens, first-order offers and merchandise.'],
 };
 export const pagePaths=[...Object.keys(pages),...products.map(p=>'/products/'+p.id),...merch.map(p=>'/products/'+p.id)];
 export function seoFor(path){

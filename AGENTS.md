@@ -65,3 +65,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 ## Storefront visual and offer update — 2026-10-30
 - Keep the full real tray and metal rim visible. Product and editorial photos should be centred, straight, and use normal blending; do not introduce generated illustration or a coloured photo background.
 - The newsletter pop-up, footer form and fourth editorial card promote 5% off the first order. Registration is stored in Cloudflare D1; customers use the same email for the first order and the discount is confirmed before payment. Do not claim an automatic coupon or checkout discount.
+
+## FAQ direction — 2026-10-30
+- Add a footer-linked FAQ page with short, grouped expandable questions, inspired by the Good Baklava FAQ structure but written for Baklava Mate's actual event-tray and enquiry flow.
+- Keep the established typography and palette. Do not promise online checkout, fixed delivery terms, storage life or allergen suitability that have not been confirmed.
